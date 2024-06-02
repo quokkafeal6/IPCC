@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.13)  31 MAY 2024 17:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.13)  2 JUN 2024 16:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -621,9 +621,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
-
-LaTeX Warning: Command \c invalid in math mode on input line 34.
-
 [1
 
 {C:/Users/Anton/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
@@ -632,19 +629,21 @@ Package rerunfilecheck Info: File `Premier_modele.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14512 strings out of 475385
- 234581 string characters out of 2776907
- 620296 words of memory out of 3000000
+ 14524 strings out of 475385
+ 234753 string characters out of 2776907
+ 625296 words of memory out of 3000000
  35601 multiletter control sequences out of 15000+600000
- 519091 words of font info for 110 fonts, out of 8000000 for 9000
+ 519589 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,6n,77p,1013b,457s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C
+{C:/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.en
+c}{C:/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C
 :/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C
 :/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C
 :/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/U
 sers/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users
 /Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users
+/Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users
 /Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users
 /Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/
 Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/A
@@ -653,9 +652,9 @@ ton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Ant
 on/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Anton
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Anton
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Premier_modele.pdf (1 page, 156910 bytes).
+Output written on Premier_modele.pdf (1 page, 163828 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
+ 73 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
  26625 words of extra memory for PDF output out of 29859 (max. 10000000)
 
