@@ -5,7 +5,7 @@ import numpy as np
 S = 1361  # Constante solaire en W/m^2
 A = 0.3  # Albédo terrestre
 sigma = 5.67e-8  # Constante de Stefan-Boltzmann en W/m^2/K^4
-w=2*3.14/24 # En h-1
+w=2*math.pi/24 # En h-1
 
 def calculate_temperature(S, A, sigma, lat, lon, t):
     """
@@ -37,10 +37,10 @@ try:
     # Entrer la latitude
     lat = float(input("Entrer la latitude (entre -90 et 90 degrés) : "))
     lon = float(input("Entrer la longitude (entre -90 et 90 degrés) : "))
-    t = int(input("Entrer le temps à Greenwich: "))
+    t = int(input("Entrer le temps UTC-0 à Greenwich: "))
 
     # Calcul de la température moyenne de la Terre
-    T_earth = calculate_temperature(S, A, sigma, lat,lon,t)
+    T_earth = calculate_temperature(S, A, sigma, lat,lon,t+6) # t-6 pour arriver à avoir la temperature maximale à Greenwich à 12h (incidence le plus normal)
     print(f"La température moyenne de la Terre à la latitude {lat}° et la longitude {lon}°est de {T_earth:.2f} K")
 
     # Convertir en Celsius
