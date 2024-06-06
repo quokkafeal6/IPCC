@@ -28,14 +28,14 @@ def calculate_temperature(S, A, sigma, lat, lon):
     # Énergie moyenne reçue par unité de surface
     energy_received = (1 - A) * Slatlon / 4
 
-    # Température d'équilibre10
+    # Température d'équilibre
     T = (energy_received / sigma) ** 0.25
     return T
 
 try:
     # Entrer la latitude
-    lat = int(input("Entrer la latitude (entre -90 et 90 degrés) : "))
-    lon = int(input("Entrer la longitude (entre -90 et 90 degrés) : "))
+    lat = float(input("Entrer la latitude (entre -90 et 90 degrés) : "))
+    lon = float(input("Entrer la longitude (entre -90 et 90 degrés) : "))
 
     # Calcul de la température moyenne de la Terre
     T_earth = calculate_temperature(S, A, sigma, lat,lon)
