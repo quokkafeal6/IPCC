@@ -1,0 +1,10 @@
+LISTES DES OBJECTIFS
+
+Listes potentiel des sources énergétiques :
+-	Soleil
+-	Effets internes
+
+SOLEIL : 
+-	Puissance surfacique  reçu du soleil à (théorique ou mesuré ? source ?) : 1308 W/m² (800km d’altitude)
+-	Puissance surfacique  reçu du soleil à (théorique ou mesuré ? source ?) : 300 W/m² ( ?km d’altitude) « Trouver le lien avec la température »
+-	
