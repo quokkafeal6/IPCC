@@ -25,9 +25,7 @@ def calculate_temperature(S, A, sigma, lat):
     return T
 
 # Calcul de la température moyenne de la Terre
-lat=-1
-while lat<0:
-    lat = int(input("entrer la latitude "))
+lat = int(input("entrer la latitude "))
 
 T_earth = calculate_temperature(S, A, sigma, lat)
 print(f"La température moyenne de la Terre est de {T_earth:.2f} K")
