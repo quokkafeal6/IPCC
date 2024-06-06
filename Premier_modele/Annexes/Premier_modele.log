@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.13)  6 JUN 2024 16:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.13)  6 JUN 2024 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -778,8 +778,14 @@ Package microtype Info: Character `029' is missing
 
 {C:/Users/Anton/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2 <./Schema
 _maitre_couple.png>] (Premier_modele.aux)
-Package rerunfilecheck Info: File `Premier_modele.out' has not changed.
-(rerunfilecheck)             Checksum: B25BE792E6637947D3209842CAD2B677;235.
+
+Package rerunfilecheck Warning: File `Premier_modele.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Premier_modele.out':
+(rerunfilecheck)             Before: E9F232D0DBB19FC9D6D0C73CAA2DB050;237
+(rerunfilecheck)             After:  B25BE792E6637947D3209842CAD2B677;235.
  ) 
 Here is how much of TeX's memory you used:
  17889 strings out of 475385
