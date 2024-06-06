@@ -4,7 +4,8 @@ data_albedo = {
     "Amérique": 0.25,
     "Europe": 0.3,
     "Asie": 0.2,
-    "Afrique": 0.35,
+    "Afrique_Continentale": 0.35,
+    "Afrique_Désertique": 0.4,
     # Océans
     "Océans": 0.12,
     # Pôles
@@ -25,7 +26,10 @@ def determiner_partie_terre(latitude, longitude):
     elif -60 <= latitude <= 40 and -30 <= longitude <= 160:  # Asie
         return "Asie"
     elif -60 <= latitude <= 40 and -30 <= longitude <= 40:  # Afrique
-        return "Afrique"
+        if 15 <= latitude <= 30 and -20 <= longitude <= 40:  # Afrique_Désertique
+            return "Afrique_Désertique"
+        else:
+            return "Afrique_Continentale"
     else:
         return "Océans"
 
