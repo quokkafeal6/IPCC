@@ -4,13 +4,27 @@ data_albedo = {
     "Amérique": 0.25,
     "Europe": 0.3,
     "Asie": 0.2,
-    "Afrique_Continentale": 0.35,
-    "Afrique_Désertique": 0.4,
+    "Afrique_Continentale": 0.25,
+    "Afrique_Désertique": 0.45,
     # Océans
     "Océans": 0.12,
     # Pôles
     "Pole Nord": 0.75,
     "Pole Sud": 0.8
+}
+
+data_conductivitetherm = {
+    # Continents
+    "Amérique": 1.5,             # W/m·K, moyenne approximative pour divers sols et terrains
+    "Europe": 1.8,               # W/m·K, moyenne approximative pour divers sols et terrains
+    "Asie": 1.3,                 # W/m·K, moyenne approximative pour divers sols et terrains
+    "Afrique_Continentale": 1.6, # W/m·K, moyenne approximative pour divers sols et terrains
+    "Afrique_Désertique": 0.5,   # W/m·K, sable désertique a une conductivité thermique plus basse
+    # Océans
+    "Océans": 0.6,               # W/m·K, moyenne pour l'eau de mer
+    # Pôles
+    "Pole Nord": 2.2,            # W/m·K, pour la glace et le permafrost
+    "Pole Sud": 2.1              # W/m·K, pour la glace et le permafrost
 }
 
 # Fonction pour déterminer la partie de la Terre en fonction des coordonnées de latitude et de longitude
