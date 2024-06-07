@@ -56,18 +56,12 @@ def obtenir_albedo(latitude, longitude):
     partie_terre = determiner_partie_terre(latitude, longitude)
     return data_albedo.get(partie_terre, "Inconnu")
 
-# Fonction pour obtenir la conductivité thermique en fonction des coordonnées de latitude et de longitude
-def obtenir_conductivite(latitude, longitude):
-    partie_terre = determiner_partie_terre(latitude, longitude)
-    return data_conductivite.get(partie_terre, "Inconnu")
-
 # Coordonnées de latitude et de longitude en entrée
 latitude_entree = float(input("Entrez la latitude : "))
 longitude_entree = float(input("Entrez la longitude : "))
 
 # Obtention de l'albédo et de la conductivité thermique pour les coordonnées spécifiées
 albedo = obtenir_albedo(latitude_entree, longitude_entree)
-conductivite = obtenir_conductivite(latitude_entree, longitude_entree)
 
 print(f"L'albédo est de : {albedo}")
 
