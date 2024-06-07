@@ -20,7 +20,7 @@ def calculate_temperature(S, A, sigma, lat, lon, t):
     :return: Température d'équilibre en Kelvin
     """
     # Calcul de l'énergie reçue en fonction de la latitude
-    Slatlon = S * np.cos(w * t) * np.sin((90 - lat) * 2 * math.pi / 360) * np.sin(lon * 2 * math.pi / 360) - S * np.sin(w * t) * np.sin((90 - lat) * 2 * math.pi / 360) * np.cos(lon * 2 * math.pi / 360)
+    Slatlon = S * np.cos(w * t) * np.sin((90 - lat) * 2 * math.pi / 360) * np.sin(lon * 2 * math.pi / 360) + S * np.sin(w * t) * np.sin((90 - lat) * 2 * math.pi / 360) * np.cos(lon * 2 * math.pi / 360)
 
     # Vérifier que la latitude est dans la plage valide
     if lat < -90 or lat > 90:
@@ -48,7 +48,7 @@ try:
     t = hours + minutes / 60.0  # Convertir en heures décimales
 
     # Calcul de la température moyenne de la Terre
-    T_earth = calculate_temperature(S, A, sigma, lat, lon, t + 6)  # t+6 pour avoir la température maximale à Greenwich à 12h
+    T_earth = calculate_temperature(S, A, sigma, lat, lon, t - 6)  # t-6 pour avoir la température maximale à Greenwich à 12h
     print(f"La température moyenne de la Terre à la latitude {lat}° et la longitude {lon}° est de {T_earth:.2f} K")
 
     # Convertir en Celsius
