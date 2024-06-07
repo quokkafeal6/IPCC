@@ -17,14 +17,19 @@ def calculate_temperature(S, A, sigma, lat, lon, t):
     :param lat: Latitude en degrés
     :return: Température d'équilibre en Kelvin
     """
+
+
+    # Calcul de l'énergie reçue en fonction de la latitude
+    Slatlon = S*np.cos(w*t)*np.sin((90-lat) * 2 * math.pi / 360)*np.sin(lon*2*math.pi/360)-S*np.sin(w*t)*np.sin((90-lat) * 2 * math.pi / 360)*np.cos(lon*2*math.pi/360)
+
     # Vérifier que la latitude est dans la plage valide
     if lat < -90 or lat > 90:
         raise ValueError("La latitude doit être comprise entre -90 et 90 degrés.")
     elif lon < -90 or lon > 90:
         raise ValueError("La longitude doit être comprise entre -90 et 90 degrés.")
+    elif Slatlon < 0 :
+        raise ValueError("Nous sommes la nuit ")
 
-    # Calcul de l'énergie reçue en fonction de la latitude
-    Slatlon = S*np.cos(w*t)*np.sin((90-lat) * 2 * math.pi / 360)*np.sin(lon*2*math.pi/360)-S*np.sin(w*t)*np.sin((90-lat) * 2 * math.pi / 360)*np.cos(lon*2*math.pi/360)
 
     # Énergie moyenne reçue par unité de surface
     energy_received = (1 - A) * Slatlon / 4
