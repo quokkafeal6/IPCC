@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.13)  7 JUN 2024 14:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.13)  8 JUN 2024 21:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -564,8 +564,12 @@ tex.def
 File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count307
 \l__pdf_internal_box=\box58
-)
-No file Modele_2.aux.
+) (Modele_2.aux
+(C:\Users\Anton\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/fr\babel
+-french.tex
+Package babel Info: Importing font and identification data for french
+(babel)             from babel-fr.ini. Reported on input line 11.
+))
 \openout1 = `Modele_2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -586,12 +590,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
-
-(C:\Users\Anton\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/fr\babel
--french.tex
-Package babel Info: Importing font and identification data for french
-(babel)             from babel-fr.ini. Reported on input line 11.
-)
 LaTeX Info: Redefining \degres on input line 25.
 LaTeX Info: Redefining \up on input line 25.
 LaTeX Info: Redefining \microtypecontext on input line 25.
@@ -678,11 +676,13 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 25.
+(Modele_2.out) (Modele_2.out)
 \@outlinefile=\write3
 \openout3 = `Modele_2.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
 7.
+
 (C:\Users\Anton\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -744,35 +744,82 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 LaTeX Warning: No \author given.
 
-[1
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
+6.
+(C:\Users\Anton\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 36.
+ [1
 
 {C:/Users/Anton/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(Modele_2.aux)
 
-Package rerunfilecheck Warning: File `Modele_2.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Command \c invalid in math mode on input line 74.
 
-Package rerunfilecheck Info: Checksums for `Modele_2.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  08B48B9AEDB3EB2FC9F834D3D8C50851;157.
+
+LaTeX Warning: Command \c invalid in math mode on input line 78.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 94.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 98.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 107.
+
+<Schema_maitre_couple.png, id=36, 454.644pt x 175.857pt>
+File: Schema_maitre_couple.png Graphic file (type png)
+<use Schema_maitre_couple.png>
+Package pdftex.def Info: Schema_maitre_couple.png  used on input line 112.
+(pdftex.def)             Requested size: 409.17581pt x 158.26984pt.
+
+Package caption Warning: \setcaptiontype
+(caption)                outside box or environment on input line 114.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 114.
+See the caption package documentation for explanation.
+
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+[2] [3 <./Schema_maitre_couple.png>] (Modele_2.aux)
+Package rerunfilecheck Info: File `Modele_2.out' has not changed.
+(rerunfilecheck)             Checksum: 3192E81EF1E98624911E67D5DB068C41;441.
  ) 
 Here is how much of TeX's memory you used:
- 17763 strings out of 475385
- 293952 string characters out of 2776907
- 669057 words of memory out of 3000000
- 38793 multiletter control sequences out of 15000+600000
- 512539 words of font info for 94 fonts, out of 8000000 for 9000
+ 17927 strings out of 475385
+ 296996 string characters out of 2776907
+ 679097 words of memory out of 3000000
+ 38885 multiletter control sequences out of 15000+600000
+ 532105 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,7n,90p,1007b,458s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C
-:/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C
-:/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:
-/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/
-Users/Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb>
-Output written on Modele_2.pdf (1 page, 107533 bytes).
+ 84i,15n,90p,1007b,600s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C
+:/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C
+:/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Us
+ers/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Us
+ers/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Us
+ers/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users
+/Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users
+/Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users
+/Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/User
+s/Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/User
+s/Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/User
+s/Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users
+/Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/
+Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/A
+nton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/An
+ton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Anto
+n/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Anto
+n/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
+Output written on Modele_2.pdf (3 pages, 577444 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
- 22529 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 114 PDF objects out of 1000 (max. 8388607)
+ 9 named destinations out of 1000 (max. 500000)
+ 34854 words of extra memory for PDF output out of 35830 (max. 10000000)
 
