@@ -25,9 +25,7 @@
 \begin{document}
 \maketitle
 
-\section{Description du modèle}
-
-\subsection{Modèle 1}
+\section{Modèle 1}
 
 On part des données suivantes :
 
@@ -40,7 +38,7 @@ On part des données suivantes :
 
 \end{enumerate}
 
-Pour commencer, la puissance que reçoit la Terre correspond au produit de la puissance surfacique et de la surface de la Terre en considérant que la surface de la Terre est un disque pour connaître la puissance réelle reçue sur l'ensemble de sa surface. En notant $P_S$ la puissance surfacique du Soleil à la distance Terre-Soleil du Soleil, $P_{S/T}$ la puissance reçue par la Terre, S la surface du maître-couple (voir Table 1 dans Annexes) de la Terre et $R_T$ le rayon de la Terre, on a :
+Pour commencer, la puissance que reçoit la Terre correspond au produit de la puissance surfacique et de la surface de la Terre en considérant que la surface de la Terre est un disque pour connaître la puissance réelle reçue sur l'ensemble de sa surface. En notant $P_S$ la puissance surfacique du Soleil à la distance Terre-Soleil du Soleil, $P_{S/T}$ la puissance reçue par la Terre, S la surface du maître-couple (voir Table 2 dans Annexes) de la Terre et $R_T$ le rayon de la Terre, on a :
 
 \[ P_{S/T} = P_S \cdot S = P_S \cdot \pi R_T^2  \]
 
@@ -60,7 +58,7 @@ Finalement, en remplaçant par les expressions explicitées précédemment et en
 
 \[ T = \left(\dfrac{(1 - A) \cdot P_S}{4\sigma}\right)^{1/4} \]
 
-\subsection{Modèle 2}
+\section{Modèle 2}
 
 Dans ce modèle, on propose une amélioration du premier modèle proposé en considérant la position sur Terre (latitude et longitude), ainsi que le temps, c'est-à-dire la partie de la Terre qui est éclairée par le Soleil.
 
@@ -79,8 +77,10 @@ Ce qui donne en simplifiant :
 
 On projette ensuite $\vec{n}$ et $\vec{n'}$ dans le repère cartésien (x(t), y(t)). Chaque axe dépend de t en raison de la rotation de la Terre sur elle-même, mais ces deux-là sont immobiles dans référentiel de la Terre.
 
-\textbf{Modéliser la situation !!!}
-
+\begin{adjustbox}{center}
+\includegraphics[scale=0.5]{projete_omega_t}
+\end{adjustbox}
+\captionof{table}{Rotation de la Terre (vue de dessus) \\} 
 Puisque $ \vec{n} = -\overrightarrow{e_r}$, on a :
 
 \[ \vec{n} = - \sin \theta \cos \phi ~ \vec{x} - \sin \theta \sin \phi ~ \vec{y} \]
@@ -106,6 +106,8 @@ On peut ensuite calculer la température en un point de la Terre, en fonction de
 
 \[ T (\theta , \phi , t) = \left(\dfrac{(1 - A) \cdot P_{S,reçue}}{4\sigma}\right)^{1/4} \]
 
+
+\newpage
 \section{Annexes}
 
 \begin{adjustbox}{center}
