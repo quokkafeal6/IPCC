@@ -78,7 +78,7 @@ m.imshow(colors.T, origin='lower', extent=[-180, 180, -90, 90], cmap=cmap)
 # Ajouter une légende
 import matplotlib.patches as mpatches
 handles = [mpatches.Patch(color=cmap(i), label=zone) for i, zone in enumerate(zone_colors.keys())]
-plt.legend(handles=handles, bbox_to_anchor=(1, 1), loc='upper left')
+plt.legend(handles=handles, bbox_to_anchor=(0.95, 1), loc='upper left')
 
 plt.title('Zones géographiques selon la latitude et la longitude')
 plt.show()
