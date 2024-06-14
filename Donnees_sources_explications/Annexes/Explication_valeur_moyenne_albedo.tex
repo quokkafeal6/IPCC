@@ -1,0 +1,173 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[frenchb]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+\usepackage{array,multirow,makecell}
+\setcellgapes{1pt}
+\makegapedcells
+\usepackage{caption}
+\usepackage{adjustbox}
+
+\usepackage{amsmath,amssymb,bm,upgreek,stmaryrd,mathrsfs,systeme}
+
+\usepackage{graphicx}
+
+\usepackage{geometry}
+\geometry{hmargin=3cm,vmargin=2cm}
+
+\usepackage{hyperref}
+
+\title{Explication de la valeur moyenne de l'albédo}
+
+\begin{document}
+
+\section{Considérations générales}
+
+L'albédo est une mesure de la réflectivité d'une surface, exprimée en pourcentage ou en fraction de la lumière solaire incidente qui est réfléchie par cette surface. L'albédo moyen de la Terre est d'environ 0,3, ce qui signifie que la Terre réfléchit environ 30\% de la lumière solaire qu'elle reçoit.
+
+Voici une explication plus détaillée des composantes qui influencent cette valeur :
+
+\begin{enumerate}
+
+\item[1 -] Neige et glace : Les surfaces enneigées et glacées ont un albédo élevé, souvent entre 0,6 et 0,9, ce qui signifie qu'elles réfléchissent une grande partie de la lumière solaire. Cela est particulièrement vrai pour les régions polaires et les glaciers
+
+\item[2 -] Déserts : Les déserts, avec leurs sables clairs, ont également un albédo relativement élevé, autour de 0,3 à 0,5
+
+\item[3 -] Océans : L'eau des océans a un albédo faible, environ 0,06, car elle absorbe la majorité de la lumière solaire incidente, ne réfléchissant qu'une petite partie
+
+\item[4 -] Forêts et prairies : La végétation a un albédo modéré, généralement entre 0,15 et 0,25. Les forêts denses ont tendance à avoir un albédo plus faible que les prairies.
+
+\item[5 -] Nuages : Les nuages jouent un rôle majeur dans l'albédo de la Terre. Les nuages épais et bas peuvent avoir un albédo élevé (jusqu'à 0,9), tandis que les nuages plus fins et élevés ont un albédo plus faible. En moyenne, les nuages contribuent de manière significative à l'albédo global en réfléchissant une partie importante du rayonnement solaire.
+
+\item[6 -] Aérosols : Les particules en suspension dans l'atmosphère, provenant de sources naturelles (comme les volcans) ou anthropiques (comme la pollution industrielle), peuvent augmenter l'albédo en réfléchissant la lumière solaire. Les aérosols sulfurés, en particulier, sont efficaces pour augmenter l'albédo.
+
+\end{enumerate}	
+
+
+L'albédo moyen de la Terre est donc une valeur intégrée qui résulte de la combinaison de toutes ces surfaces et phénomènes. Les variations saisonnières et géographiques influencent cette moyenne. Par exemple, en hiver, l'albédo global peut augmenter en raison de l'extension de la couverture neigeuse. De même, les variations dans la couverture nuageuse en réponse aux conditions météorologiques peuvent entraîner des fluctuations de l'albédo terrestre.
+
+L'albédo moyen de 0,3 a des implications importantes pour le climat terrestre. Un albédo plus élevé signifie plus de réflexion de la lumière solaire et donc moins de chaleur absorbée, ce qui tend à refroidir la planète. À l'inverse, un albédo plus faible signifie moins de réflexion et plus de chaleur absorbée, ce qui tend à réchauffer la planète. Ces mécanismes de rétroaction sont cruciaux pour comprendre les dynamiques climatiques à long terme.
+
+
+Pour calculer l'albédo moyen de la Terre, on utilise généralement une formule qui intègre les différentes contributions de réflexion des surfaces terrestres, des océans, des nuages et des particules atmosphériques. L'albédo moyen (A) est donné par la somme pondérée des albédo individuels de ces différents composants, en tenant compte de leur fraction de couverture respective. La formule générale peut être écrite comme suit :
+
+\[ A = \displaystyle\sum_i a_i \cdot f_i \]
+
+Où :
+\begin{enumerate}
+
+\item[•] $a_i$ est l'albédo de la composante i
+\item[•] $f_i$ est la fraction de la surface terrestre couverte par la composante i
+
+\end{enumerate}
+
+
+\section{Exemple de calcul de l'albédo moyen}
+
+
+Supposons les valeurs suivantes pour simplifier le calcul :
+
+\begin{enumerate}
+
+\item[•] Surface terrestre (sol, végétation) :
+\begin{enumerate}
+
+\item[-] Fraction de couverture : 0,3
+\item[-] Albédo moyen : 0,2
+
+\end{enumerate}
+
+\item[•] Océans :
+\begin{enumerate}
+
+\item[-] Fraction de couverture : 0,7
+\item[-] Albédo moyen : 0,06
+
+\end{enumerate}
+
+\item[•] Nuages :
+\begin{enumerate}
+
+\item[-] Fraction de couverture : 0,5 (notez que cela peut se chevaucher avec d'autres surfaces, les valeurs réelles doivent être ajustées pour cela)
+\item[-] Albédo moyen : 0,5
+
+\end{enumerate}
+
+\item[•] Aérosols :
+\begin{enumerate}
+
+\item[-] Fraction de couverture : 1,0 (car les aérosols sont présents partout, mais leur contribution spécifique dépend de la concentration)
+\item[-] Albédo moyen : 0,02 (ajusté pour une couverture globale)
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+Pour simplifier, nous allons ignorer le chevauchement des fractions et additionner directement les contributions.
+
+
+\section{Calcul détaillé}
+
+\begin{enumerate}
+
+\item[1.] Surface terrestre :
+
+Contribution de la surface terrestre = $a_{\text{terrestre}} \cdot f{\text{terrestre}} = 0.2 \cdot 0.3 = 0.06$
+
+\item[2.] Océans :
+
+Contribution des océans = $a_{\text{océans}} \cdot f_{\text{océans}} = 0.06 \cdot 0.6 = 0.036$
+
+\item[3.] Nuages :
+
+Contribution des nuages = $a_{\text{nuages}} \cdot f_{\text{nuages}} = 0.5 \cdot 0.5 = 0.25$
+
+\item[4.] Aérosols :
+
+Contribution des aérosols = $a_{\text{aérosols}} \cdot f_{\text{aérosols}} = 0.02 \cdot 1.0 = 0.02$
+
+\end{enumerate}
+
+
+\section{Albédo moyen total}
+
+Additionnons ces contributions :
+
+\[ A = 0.06 +0.036 +0.25 + 0.02 = 0.366 \] 
+
+
+La formule générale pour calculer l'albédo d'une matière est la suivante :
+
+\[ A = \dfrac{\text{Flux de lumière réfléchi}}{\text{Flux de lumière incidente}} \]
+
+Cela peut également être exprimé en pourcentage en multipliant le résultat par 100.
+
+\begin{enumerate}
+
+\item[•] Le flux de lumière réfléchi est la quantité totale de lumière réfléchie par la surface
+\item[•] Le flux de lumière incidente est la quantité totale de lumière incidente sur la surface
+
+\end{enumerate}
+
+Cela peut être illustré comme suit :
+
+\[ A = \dfrac{I_r}{I_i} \]
+
+Où :
+
+\begin{enumerate}
+
+\item[•] $I_r$ est l'intensité de la lumière réfléchie
+\item[•] $I_i$ est l'intensité de la lumière incidente \\
+
+\end{enumerate}
+
+Source : \url{https://www.cea.fr/comprendre/Pages/climat-environnement/climat.aspx?Type=Chapitre&numero=5}
+
+
+
+\end{document}
