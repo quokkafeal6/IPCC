@@ -1,67 +1,51 @@
+import requests
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-import cartopy.crs as ccrs
-import cartopy.feature as cfeature
-import shapely.geometry as sgeom
-from shapely.prepared import prep
+from PIL import Image
+from io import BytesIO
 
-def plot_3d_globe(longitude, latitude):
+def get_earth_texture():
+    # Utilisation d'une image fixe de la Terre entière (Blue Marble)
+    url = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Earth_Eastern_Hemisphere.jpg/2048px-Earth_Eastern_Hemisphere.jpg"
+    response = requests.get(url)
+    response.raise_for_status()
+    img = Image.open(BytesIO(response.content))
+    return img
+
+def plot_3d_globe_with_texture(longitude, latitude):
+    # Récupération de l'image texture de la Terre
+    img = get_earth_texture()
+
     # Création de la figure et des axes en 3D
     fig = plt.figure(figsize=(10, 7))
     ax = fig.add_subplot(111, projection='3d')
 
-    # Réduction de la résolution pour moins de points
-    u = np.linspace(-np.pi, np.pi, 180)  # 180 points pour 360 degrés de longitude (résolution réduite)
-    v = np.linspace(0, np.pi, 180)       # 180 points pour 180 degrés de latitude (résolution réduite)
+    # Paramètres pour la sphère
+    u = np.linspace(0, 2 * np.pi, img.size[0])
+    v = np.linspace(0, np.pi, img.size[1])
     u, v = np.meshgrid(u, v)
     x = np.cos(u) * np.sin(v)
     y = np.sin(u) * np.sin(v)
-    z = -np.cos(v)  # Inverser le haut et le bas
+    z = np.cos(v)
 
-    # Utilisation de cartopy pour obtenir les géométries des continents
-    continents = cfeature.NaturalEarthFeature('physical', 'land', '110m', edgecolor='face', facecolor='none')
+    # Appliquer la texture à la sphère
+    img = np.array(img) / 255.0  # Normaliser les valeurs de l'image
+    img = np.flipud(img)  # Inverser l'image verticalement pour correspondre aux coordonnées sphériques
 
-    # Obtention des géométries des continents
-    land_geoms = list(continents.geometries())
+    ax.plot_surface(x, y, z, rstride=1, cstride=1, facecolors=img, linewidth=0, antialiased=False)
 
-    # Préparation des géométries pour un accès rapide
-    prepared_land_geoms = [prep(geom) for geom in land_geoms]
-
-    # Fonction pour convertir des coordonnées géographiques en coordonnées cartésiennes
+    # Conversion des coordonnées de longitude et latitude en coordonnées cartésiennes pour le point
     def geographic_to_cartesian(lon, lat):
         lon = np.radians(lon)
         lat = np.radians(lat)
         x = np.cos(lat) * np.cos(lon)
         y = np.cos(lat) * np.sin(lon)
-        z = -np.sin(lat)  # Inverser le haut et le bas
+        z = np.sin(lat)
         return x, y, z
 
-    # Fonction pour vérifier si un point est sur terre (continent)
-    def is_land(lon, lat):
-        point = sgeom.Point(lon, lat)
-        return any(geom.contains(point) for geom in prepared_land_geoms)
-
-    # Création d'un masque pour colorier les continents et les océans
-    colors = np.empty_like(x, dtype=object)
-    for i in range(x.shape[0]):
-        for j in range(x.shape[1]):
-            lon = np.degrees(u[i, j])
-            lat = np.degrees(v[i, j] - np.pi / 2)
-            if lat >= 85 or lat <= -85:  # Coloration des pôles
-                colors[i, j] = 'white'
-            elif is_land(lon, lat):
-                colors[i, j] = 'orange'
-            else:
-                colors[i, j] = 'blue'
-
-    # Tracé de la sphère avec les couleurs appropriées
-    ax.plot_surface(x, y, z, facecolors=colors, rstride=1, cstride=1, linewidth=0, antialiased=False, shade=False)
-
-    # Conversion des coordonnées de longitude et latitude en coordonnées cartésiennes pour le point
-    x_point, y_point, z_point = geographic_to_cartesian(longitude, latitude)
-
     # Placement du point sur la sphère
+    x_point, y_point, z_point = geographic_to_cartesian(longitude, latitude)
     ax.scatter(x_point, y_point, z_point, color='red', s=100)
 
     # Ajustement de l'échelle et des labels
@@ -72,11 +56,11 @@ def plot_3d_globe(longitude, latitude):
     plt.title(f'Point sur la planète à (Longitude: {longitude}, Latitude: {latitude})')
 
     # Centrer la vue sur le point spécifié
-    ax.view_init(elev=latitude, azim=longitude)
+    ax.view_init(elev=latitude, azim=longitude + 180)
 
     plt.show()
 
 # Exemple d'utilisation pour une position près de l'équateur
 longitude = -74.006  # Longitude de New York
-latitude = 0  # Latitude près de l'équateur
-plot_3d_globe(longitude, latitude)
+latitude = 40.7128  # Latitude de New York
+plot_3d_globe_with_texture(longitude, latitude)
