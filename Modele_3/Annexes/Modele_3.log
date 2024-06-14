@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.13)  14 JUN 2024 15:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.13)  14 JUN 2024 16:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -564,8 +564,12 @@ tex.def
 File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count307
 \l__pdf_internal_box=\box58
-)
-No file Modele_3.aux.
+) (Modele_3.aux
+(C:\Users\Anton\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/fr\babel
+-french.tex
+Package babel Info: Importing font and identification data for french
+(babel)             from babel-fr.ini. Reported on input line 11.
+))
 \openout1 = `Modele_3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -586,12 +590,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
-
-(C:\Users\Anton\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/fr\babel
--french.tex
-Package babel Info: Importing font and identification data for french
-(babel)             from babel-fr.ini. Reported on input line 11.
-)
 LaTeX Info: Redefining \degres on input line 25.
 LaTeX Info: Redefining \up on input line 25.
 LaTeX Info: Redefining \microtypecontext on input line 25.
@@ -678,11 +676,13 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 25.
+(Modele_3.out) (Modele_3.out)
 \@outlinefile=\write3
 \openout3 = `Modele_3.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
 7.
+
 (C:\Users\Anton\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -744,84 +744,88 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 LaTeX Warning: No \author given.
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-9.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
+1.
 (C:\Users\Anton\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 39.
+(Font)              <10.95> on input line 41.
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
 [1
 
 {C:/Users/Anton/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<Schema_maitre_couple.png, id=20, 454.644pt x 175.857pt>
+<Schema_maitre_couple.png, id=35, 454.644pt x 175.857pt>
 File: Schema_maitre_couple.png Graphic file (type png)
 <use Schema_maitre_couple.png>
-Package pdftex.def Info: Schema_maitre_couple.png  used on input line 67.
+Package pdftex.def Info: Schema_maitre_couple.png  used on input line 73.
 (pdftex.def)             Requested size: 409.17581pt x 158.26984pt.
 
 
 Package caption Warning: \setcaptiontype
-(caption)                outside box or environment on input line 69.
+(caption)                outside box or environment on input line 75.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 69.
+(caption)                particular \caption on input line 75.
 See the caption package documentation for explanation.
 
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 
-LaTeX Warning: Command \c invalid in math mode on input line 80.
+LaTeX Warning: Command \c invalid in math mode on input line 86.
 
 
-LaTeX Warning: Command \c invalid in math mode on input line 84.
+LaTeX Warning: Command \c invalid in math mode on input line 90.
 
-<projete_omega_t.png, id=22, 253.54726pt x 245.718pt>
+<projete_omega_t.png, id=37, 253.54726pt x 245.718pt>
 File: projete_omega_t.png Graphic file (type png)
 <use projete_omega_t.png>
-Package pdftex.def Info: projete_omega_t.png  used on input line 89.
+Package pdftex.def Info: projete_omega_t.png  used on input line 95.
 (pdftex.def)             Requested size: 126.7733pt x 122.85869pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 91.
+(caption)                particular \caption on input line 97.
 See the caption package documentation for explanation.
 
-[2 <./Schema_maitre_couple.png> <./projete_omega_t.png>]
+[2 <./Schema_maitre_couple.png>]
 
-LaTeX Warning: Command \c invalid in math mode on input line 102.
-
-
-LaTeX Warning: Command \c invalid in math mode on input line 106.
+LaTeX Warning: Command \c invalid in math mode on input line 109.
 
 
-LaTeX Warning: Command \c invalid in math mode on input line 115.
+LaTeX Warning: Command \c invalid in math mode on input line 113.
 
-[3] [4] (Modele_3.aux)
 
-Package rerunfilecheck Warning: File `Modele_3.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Command \c invalid in math mode on input line 122.
 
-Package rerunfilecheck Info: Checksums for `Modele_3.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  6CA22755CC11226B0FF76A8ECAF331D4;256.
+<Schema_albedo.png, id=47, 925.056pt x 444.4605pt>
+File: Schema_albedo.png Graphic file (type png)
+<use Schema_albedo.png>
+Package pdftex.def Info: Schema_albedo.png  used on input line 129.
+(pdftex.def)             Requested size: 462.52687pt x 222.2297pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 131.
+See the caption package documentation for explanation.
+
+[3 <./projete_omega_t.png>] [4 <./Schema_albedo.png>] [5] (Modele_3.aux)
+Package rerunfilecheck Info: File `Modele_3.out' has not changed.
+(rerunfilecheck)             Checksum: 444036EDF32BC9D48EB9583D41E6E577;345.
  ) 
 Here is how much of TeX's memory you used:
- 17921 strings out of 475385
- 296850 string characters out of 2776907
- 679058 words of memory out of 3000000
- 38888 multiletter control sequences out of 15000+600000
- 528913 words of font info for 131 fonts, out of 8000000 for 9000
+ 17947 strings out of 475385
+ 297395 string characters out of 2776907
+ 679098 words of memory out of 3000000
+ 38903 multiletter control sequences out of 15000+600000
+ 528996 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,15n,90p,1007b,468s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 84i,15n,90p,1007b,600s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C
 :/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C
 :/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Us
@@ -840,9 +844,9 @@ nton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/An
 ton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Anto
 n/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Anto
 n/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Modele_3.pdf (4 pages, 600974 bytes).
+Output written on Modele_3.pdf (5 pages, 742636 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
- 32779 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 129 PDF objects out of 1000 (max. 8388607)
+ 13 named destinations out of 1000 (max. 500000)
+ 32816 words of extra memory for PDF output out of 35830 (max. 10000000)
 
