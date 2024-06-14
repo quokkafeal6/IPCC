@@ -1,5 +1,3 @@
-#MODULE A INSTALLER !!! : pip install basemap-data-hires
- 
 import math
 import numpy as np
 import matplotlib.pyplot as plt
@@ -7,6 +5,7 @@ from mpl_toolkits.basemap import Basemap
 
 # Constantes
 S = 1361  # Constante solaire en W/m^2
+S4 = S/4
 sigma = 5.67e-8  # Constante de Stefan-Boltzmann en W/m^2/K^4
 w = 2 * math.pi / 24  # En h^-1
 
@@ -23,7 +22,9 @@ def calculate_temperature(S, A, sigma, lat, lon, t):
     :return: Température d'équilibre en Kelvin
     """
     # Calcul de l'énergie reçue en fonction de la latitude
-    Slatlon = S * np.cos(w * t) * np.sin((90 - lat) * 2 * math.pi / 360) * np.sin(lon * 2 * math.pi / 360) + S * np.sin(w * t) * np.sin((90 - lat) * 2 * math.pi / 360) * np.cos(lon * 2 * math.pi / 360)
+    Salbedo = S4*(1-A)
+    Salbedo_effet_de_serre=Salbedo + 244  # obtenue par calcul avec rayon incident et réflechit
+    Slatlon = Salbedo_effet_de_serre * np.cos(w * t) * np.sin((90 - lat) * 2 * math.pi / 360) * np.sin(lon * 2 * math.pi / 360) + Salbedo_effet_de_serre * np.sin(w * t) * np.sin((90 - lat) * 2 * math.pi / 360) * np.cos(lon * 2 * math.pi / 360)
 
     # Vérifier que la latitude est dans la plage valide
     if lat < -90 or lat > 90:
@@ -34,7 +35,7 @@ def calculate_temperature(S, A, sigma, lat, lon, t):
         raise ValueError("Nous sommes la nuit.")
 
     # Énergie moyenne reçue par unité de surface
-    energy_received = (1 - A) * Slatlon / 4
+    energy_received = Slatlon
 
     # Température d'équilibre
     T = (energy_received / sigma) ** 0.25
@@ -92,7 +93,6 @@ def determiner_partie_terre(latitude, longitude):
     else:
         return "Océans"
 
-
 # Fonction pour obtenir l'albédo en fonction des coordonnées de latitude et de longitude
 def obtenir_albedo(lat, lon):
     partie_terre = determiner_partie_terre(lat, lon)
@@ -139,4 +139,3 @@ try:
 
 except ValueError as e:
     print(e)
-10
