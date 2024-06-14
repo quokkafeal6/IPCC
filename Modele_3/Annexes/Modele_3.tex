@@ -25,9 +25,11 @@
 \begin{document}
 \maketitle
 
-Dans ce document, nous présentons une troisième version du modèle précédent. Dans un premier temps, nous prenons en compte une différence d'albédo en fonction de l'endroit où l'on se trouve sur Terre au lieu de considérer une moyenne sur l'ensemble de la surface terrestre. 
+Dans ce document, nous présentons une troisième version du modèle précédent. Dans un premier temps, nous prenons en compte une différence d'albédo en fonction de l'endroit où l'on se trouve sur Terre au lieu de considérer une moyenne sur l'ensemble de la surface terrestre. Une fois l'albédo en fonction de la position sur Terre prise en compte, nous avons considéré l'atmosphère à travers sa composition, l'effet de serre et celui des aérosols.
 
 Ce document est organisé de la manière suivante : une première section présentant le premier modèle, qui va permettre de comprendre le deuxième modèle dans la section suivante. Ensuite, nous expliquons le troisième modèle tel que décrit précédemment.
+
+Pour tester le modèle, vous pouvez ouvrir le fichier Python "Modele\_3.py" pour faire la simulation.
 
 
 \section{Modèle 1}
@@ -63,6 +65,10 @@ Finalement, en remplaçant par les expressions explicitées précédemment et en
 
 \[ T = \left(\dfrac{(1 - A) \cdot P_S}{4\sigma}\right)^{1/4} \]
 
+Dans ce modèle, la température est constante et  :
+
+\[ T = -18,57 ^{\circ} C \]
+
 \begin{adjustbox}{center}
 \includegraphics[scale=0.9]{Schema_maitre_couple}
 \end{adjustbox}
@@ -83,12 +89,13 @@ Ce qui donne en simplifiant :
 
 \[ P_{S,reçue} = P_S \cdot \vec{n} \cdot \vec{n'} \]
 
-On projette ensuite $\vec{n}$ et $\vec{n'}$ dans le repère cartésien (x(t), y(t)). Chaque axe dépend de t en raison de la rotation de la Terre sur elle-même, mais ces deux-là sont immobiles dans référentiel de la Terre.
+On projette ensuite $\vec{n}$ et $\vec{n'}$ dans le repère cartésien (x(t), y(t)). Chaque axe dépend de t en raison de la rotation de la Terre sur elle-même, mais ces deux-là sont immobiles dans le référentiel de la Terre.
 
 \begin{adjustbox}{center}
 \includegraphics[scale=0.5]{projete_omega_t}
 \end{adjustbox}
 \captionof{table}{Rotation de la Terre (vue de dessus) \\} 
+
 Puisque $ \vec{n} = -\overrightarrow{e_r}$, on a :
 
 \[ \vec{n} = - \sin \theta \cos \phi ~ \vec{x} - \sin \theta \sin \phi ~ \vec{y} \]
@@ -113,6 +120,25 @@ Le but étant de rentrer la latitude et la longitude pour déterminer la tempér
 On peut ensuite calculer la température en un point de la Terre, en fonction de la longitude, la latitude et l'heure de la journée :
 
 \[ T (\theta , \phi , t) = \left(\dfrac{(1 - A) \cdot P_{S,reçue}}{4\sigma}\right)^{1/4} \]
+
+\section{Modèle 3}
+
+Le but de ce modèle était de découper la Terre en plusieurs surfaces en fonction de l'albédo supposée uniforme sur la surface considérée. Pour comprendre comment l'albédo est considérée en fonction de la région du monde, vous pouvez vous référencer au dictionnaire créé sur le code Python associé au modèle 3. Finalement, nous obtenons la découpe suivante :
+
+\begin{adjustbox}{center}
+\includegraphics[scale=0.5]{Schema_albedo}
+\end{adjustbox}
+\captionof{table}{Répartition de l'albédo dans le modèle \\} 
+
+
+
+
+
+
+
+
+
+
 
 
 \newpage
