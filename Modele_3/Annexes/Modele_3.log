@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.13)  13 JUN 2024 17:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.13)  14 JUN 2024 15:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -745,62 +745,66 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 LaTeX Warning: No \author given.
 
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-4.
+9.
 (C:\Users\Anton\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 34.
- [1
+(Font)              <10.95> on input line 39.
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+[1
 
 {C:/Users/Anton/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+<Schema_maitre_couple.png, id=20, 454.644pt x 175.857pt>
+File: Schema_maitre_couple.png Graphic file (type png)
+<use Schema_maitre_couple.png>
+Package pdftex.def Info: Schema_maitre_couple.png  used on input line 67.
+(pdftex.def)             Requested size: 409.17581pt x 158.26984pt.
 
-LaTeX Warning: Command \c invalid in math mode on input line 72.
-
-
-LaTeX Warning: Command \c invalid in math mode on input line 76.
-
-<projete_omega_t.png, id=21, 510.708pt x 440.847pt>
-File: projete_omega_t.png Graphic file (type png)
-<use projete_omega_t.png>
-Package pdftex.def Info: projete_omega_t.png  used on input line 81.
-(pdftex.def)             Requested size: 255.35336pt x 220.42296pt.
 
 Package caption Warning: \setcaptiontype
-(caption)                outside box or environment on input line 83.
+(caption)                outside box or environment on input line 69.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 83.
+(caption)                particular \caption on input line 69.
 See the caption package documentation for explanation.
 
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 
-LaTeX Warning: Command \c invalid in math mode on input line 94.
+LaTeX Warning: Command \c invalid in math mode on input line 80.
 
 
-LaTeX Warning: Command \c invalid in math mode on input line 98.
+LaTeX Warning: Command \c invalid in math mode on input line 84.
 
-[2 <./projete_omega_t.png>]
-
-LaTeX Warning: Command \c invalid in math mode on input line 107.
-
-[3]
-<Schema_maitre_couple.png, id=36, 454.644pt x 175.857pt>
-File: Schema_maitre_couple.png Graphic file (type png)
-<use Schema_maitre_couple.png>
-Package pdftex.def Info: Schema_maitre_couple.png  used on input line 114.
-(pdftex.def)             Requested size: 409.17581pt x 158.26984pt.
-
+<projete_omega_t.png, id=22, 253.54726pt x 245.718pt>
+File: projete_omega_t.png Graphic file (type png)
+<use projete_omega_t.png>
+Package pdftex.def Info: projete_omega_t.png  used on input line 89.
+(pdftex.def)             Requested size: 126.7733pt x 122.85869pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 116.
+(caption)                particular \caption on input line 91.
 See the caption package documentation for explanation.
 
-[4 <./Schema_maitre_couple.png>] (Modele_3.aux)
+[2 <./Schema_maitre_couple.png> <./projete_omega_t.png>]
+
+LaTeX Warning: Command \c invalid in math mode on input line 102.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 106.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 115.
+
+[3] [4] (Modele_3.aux)
 
 Package rerunfilecheck Warning: File `Modele_3.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
@@ -812,12 +816,12 @@ Package rerunfilecheck Info: Checksums for `Modele_3.out':
  ) 
 Here is how much of TeX's memory you used:
  17921 strings out of 475385
- 296856 string characters out of 2776907
- 678057 words of memory out of 3000000
+ 296850 string characters out of 2776907
+ 679058 words of memory out of 3000000
  38888 multiletter control sequences out of 15000+600000
  528913 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,15n,90p,1007b,465s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 84i,15n,90p,1007b,468s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C
 :/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C
 :/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Us
@@ -836,7 +840,7 @@ nton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/An
 ton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Anto
 n/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Anto
 n/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Modele_3.pdf (4 pages, 622259 bytes).
+Output written on Modele_3.pdf (4 pages, 600974 bytes).
 PDF statistics:
  107 PDF objects out of 1000 (max. 8388607)
  10 named destinations out of 1000 (max. 500000)
