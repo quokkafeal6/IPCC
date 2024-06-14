@@ -1,85 +1,82 @@
 import numpy as np
-import plotly.graph_objects as go
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import cartopy.crs as ccrs
+import cartopy.feature as cfeature
+import shapely.geometry as sgeom
+from shapely.prepared import prep
 
-# Coordonnées des contours des continents à l'échelle
-continents = {
-    "Africa": [
-        [-17.8, 14.8], [-3.5, 18], [11.5, 22], [13.5, 25],
-        [15, 24], [22, 18], [29.6, 14], [29.6, 14.8], [36.8, 10.25],
-        [31.5, 5], [34, -0.5], [30.2, -3.8], [24.6, -4.6], [23.6, -12.6],
-        [14.5, -12.4], [5.8, -5.5], [-17.8, 0], [-17.8, 14.8]
-    ],
-    "North America": [
-        [8, -145], [11.5, -147], [20, -148], [25, -150], [30, -150],
-        [35, -151], [40, -151], [45, -145], [60, -150], [70, -140],
-        [50, -30], [20, -30], [8, -145]
-    ],
-    "South America": [
-        [-53, -58], [-30, -58], [-12, -68], [-9.5, -60],
-        [1, -57], [1, -50], [-12, -50], [-20, -58], [-27, -57],
-        [-53, -58]
-    ],
-    "Europe": [
-        [64, -27], [75, -15], [70, 55], [35, 30], [41, 18],
-        [43, -4], [45, -4], [50, -12], [59, -4], [67, 0],
-        [74, 21], [64, -27]
-    ],
-    "Asia": [
-        [75, -15], [75, 165], [25, 165], [25, 85], [35, 45],
-        [37, 55], [35, 30], [70, 55], [75, -15]
-    ],
-    "Australia": [
-        [-10, 105], [-10, 155], [-45, 155], [-45, 105],
-        [-10, 105]
-    ],
-    "Arctic": [
-        [75, -175], [75, 175], [90, 175], [90, -175],
-        [75, -175]
-    ],
-    "Antarctica": [
-        [-60, -180], [-60, 180], [-90, 180], [-90, -180],
-        [-60, -180]
-    ]
-}
+def plot_3d_globe(longitude, latitude):
+    # Création de la figure et des axes en 3D
+    fig = plt.figure(figsize=(10, 7))
+    ax = fig.add_subplot(111, projection='3d')
 
-# Rayon de la Terre en kilomètres
-radius_earth = 6371
+    # Réduction de la résolution pour moins de points
+    u = np.linspace(-np.pi, np.pi, 180)  # 180 points pour 360 degrés de longitude (résolution réduite)
+    v = np.linspace(0,np.pi, 180)       # 90 points pour 180 degrés de latitude (résolution réduite)
+    u, v = np.meshgrid(u, v)
+    x = np.cos(u) * np.sin(v)
+    y = np.sin(u) * np.sin(v)
+    z = np.cos(v)
 
-# Rayon de la sphère
-radius_sphere = 6372
+    # Utilisation de cartopy pour obtenir les géométries des continents
+    continents = cfeature.NaturalEarthFeature('physical', 'land', '110m', edgecolor='face', facecolor='none')
 
-# Facteur d'agrandissement des continents
-scale_factor_continents = 1.25
+    # Obtention des géométries des continents
+    land_geoms = list(continents.geometries())
 
-# Création de la figure
-fig = go.Figure()
+    # Préparation des géométries pour un accès rapide
+    prepared_land_geoms = [prep(geom) for geom in land_geoms]
 
-# Ajout de la sphère représentant la Terre
-phi, theta = np.mgrid[0.0:np.pi:100j, 0.0:2.0*np.pi:100j]
-x = radius_sphere * np.sin(phi) * np.cos(theta)
-y = radius_sphere * np.sin(phi) * np.sin(theta)
-z = radius_sphere * np.cos(phi)
-fig.add_trace(go.Surface(x=x, y=y, a=z, colorscale='Blues', showscale=False))
+    # Fonction pour convertir des coordonnées géographiques en coordonnées cartésiennes
+    def geographic_to_cartesian(lon, lat):
+        lon = np.radians(lon)
+        lat = np.radians(lat)
+        x = np.cos(lat) * np.cos(lon)
+        y = np.cos(lat) * np.sin(lon)
+        z = np.sin(lat)
+        return x, y, z
 
-# Ajout des continents comme des bandes de terre à l'échelle
-for continent, points in continents.items():
-    lon, lat = zip(*points)
-    lon = np.array(lon)
-    lat = np.array(lat)
-    theta = np.radians(lon)
-    phi = np.radians(90 - lat)
-    x_continent = radius_sphere * np.sin(phi) * np.cos(theta) * scale_factor_continents
-    y_continent = radius_sphere * np.sin(phi) * np.sin(theta) * scale_factor_continents
-    z_continent = radius_sphere * np.cos(phi) * scale_factor_continents
-    fig.add_trace(go.Carpet(x=x_continent, y=y_continent, z=z_continent, color='brown'))
+    # Fonction pour vérifier si un point est sur terre (continent)
+    def is_land(lon, lat):
+        point = sgeom.Point(lon, lat)
+        return any(geom.contains(point) for geom in prepared_land_geoms)
 
-# Paramètres de la mise en page
-fig.update_layout(scene=dict(aspectratio=dict(x=1, y=1, z=1), 
-                             aspectmode='manual',
-                             xaxis=dict(visible=False),
-                             yaxis=dict(visible=False),
-                             zaxis=dict(visible=False)),
-                  margin=dict(r=0, l=0, b=0, t=0))
+    # Création d'un masque pour colorier les continents et les océans
+    colors = np.empty_like(x, dtype=object)
+    for i in range(x.shape[0]):
+        for j in range(x.shape[1]):
+            lon = np.degrees(u[i, j])
+            lat = np.degrees(v[i, j] - np.pi / 2)
+            if lat >= 85 or lat <= -85:  # Coloration des pôles
+                colors[i, j] = 'white'
+            elif is_land(lon, lat):
+                colors[i, j] = 'orange'
+            else:
+                colors[i, j] = 'blue'
 
-# Affichage du tracé
-fig.show()
+    # Tracé de la sphère avec les couleurs appropriées
+    ax.plot_surface(x, y, z, facecolors=colors, rstride=1, cstride=1, linewidth=0, antialiased=False, shade=False)
+
+    # Conversion des coordonnées de longitude et latitude en coordonnées cartésiennes pour le point
+    x_point, y_point, z_point = geographic_to_cartesian(longitude, latitude)
+
+    # Placement du point sur la sphère
+    ax.scatter(x_point, y_point, z_point, color='red', s=100)
+
+    # Ajustement de l'échelle et des labels
+    ax.set_box_aspect([1, 1, 1])  # Egalité des axes pour un aspect sphérique
+    ax.set_xlabel('X')
+    ax.set_ylabel('Y')
+    ax.set_zlabel('Z')
+    plt.title(f'Point sur la planète à (Longitude: {longitude}, Latitude: {latitude})')
+
+    # Centrer la vue sur le point spécifié
+    ax.view_init(elev=latitude, azim=longitude)
+
+    plt.show()
+
+# Exemple d'utilisation pour une position près de l'équateur
+longitude = -74.006  # Longitude de New York
+latitude = 0  # Latitude près de l'équateur
+plot_3d_globe(longitude, latitude)
