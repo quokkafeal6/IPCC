@@ -7,10 +7,27 @@
     <style>
         body { margin: 0; }
         canvas { display: block; }
+        #controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
+    <div id="controls">
+        <label for="latitude">Latitude:</label>
+        <input type="number" id="latitude" name="latitude" step="0.01"><br>
+        <label for="longitude">Longitude:</label>
+        <input type="number" id="longitude" name="longitude" step="0.01"><br>
+        <button onclick="addPoint()">Ajouter Point</button>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
     <script>
         // Initialisation de Three.js
         const scene = new THREE.Scene();
@@ -18,6 +35,9 @@
         const renderer = new THREE.WebGLRenderer();
         renderer.setSize(window.innerWidth, window.innerHeight);
         document.body.appendChild(renderer.domElement);
+
+        // Contrôles de la caméra
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
 
         // Ajout d'une sphère pour représenter la Terre
         const geometry = new THREE.SphereGeometry(1, 32, 32);
@@ -32,8 +52,38 @@
         light.position.set(10, 10, 10);
         scene.add(light);
 
+        // Ajout d'une lumière ambiante pour une meilleure visibilité
+        const ambientLight = new THREE.AmbientLight(0x404040);
+        scene.add(ambientLight);
+
         // Déplacement de la caméra pour visualiser la Terre
         camera.position.z = 3;
+
+        // Fonction pour convertir latitude et longitude en coordonnées cartésiennes
+        function latLongToCartesian(lat, lon) {
+            const radius = 1; // Rayon de la Terre
+            const phi = (90 - lat) * (Math.PI / 180);
+            const theta = (lon + 180) * (Math.PI / 180);
+
+            const x = radius * Math.sin(phi) * Math.cos(theta);
+            const z = radius * Math.sin(phi) * Math.sin(theta);
+            const y = radius * Math.cos(phi);
+
+            return { x, y, z };
+        }
+
+        // Fonction pour ajouter un point rouge aux coordonnées spécifiées
+        function addPoint() {
+            const lat = parseFloat(document.getElementById('latitude').value);
+            const lon = parseFloat(document.getElementById('longitude').value);
+            const position = latLongToCartesian(lat, lon);
+
+            const pointGeometry = new THREE.SphereGeometry(0.05, 32, 32); // Augmentation de la taille du point
+            const pointMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 }); // Point rouge
+            const point = new THREE.Mesh(pointGeometry, pointMaterial);
+            point.position.set(position.x, position.y, position.z);
+            scene.add(point);
+        }
 
         // Fonction d'animation
         function animate() {
@@ -42,6 +92,7 @@
             // Rotation de la Terre sur elle-même
             earth.rotation.y += 0.002;
 
+            controls.update();
             renderer.render(scene, camera);
         }
         animate();
