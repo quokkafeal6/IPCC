@@ -13,11 +13,11 @@ def plot_3d_globe(longitude, latitude):
 
     # Réduction de la résolution pour moins de points
     u = np.linspace(-np.pi, np.pi, 180)  # 180 points pour 360 degrés de longitude (résolution réduite)
-    v = np.linspace(0,np.pi, 180)       # 90 points pour 180 degrés de latitude (résolution réduite)
+    v = np.linspace(0, np.pi, 180)       # 180 points pour 180 degrés de latitude (résolution réduite)
     u, v = np.meshgrid(u, v)
     x = np.cos(u) * np.sin(v)
     y = np.sin(u) * np.sin(v)
-    z = np.cos(v)
+    z = -np.cos(v)  # Inverser le haut et le bas
 
     # Utilisation de cartopy pour obtenir les géométries des continents
     continents = cfeature.NaturalEarthFeature('physical', 'land', '110m', edgecolor='face', facecolor='none')
@@ -34,7 +34,7 @@ def plot_3d_globe(longitude, latitude):
         lat = np.radians(lat)
         x = np.cos(lat) * np.cos(lon)
         y = np.cos(lat) * np.sin(lon)
-        z = np.sin(lat)
+        z = -np.sin(lat)  # Inverser le haut et le bas
         return x, y, z
 
     # Fonction pour vérifier si un point est sur terre (continent)
