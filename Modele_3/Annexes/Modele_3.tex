@@ -145,6 +145,35 @@ Le but de ce modèle était de découper la Terre en plusieurs surfaces en fonct
   \caption{Répartition de l'albédo dans le modèle}
 \end{figure}
 
+Une fois l'albédo considérée de la manière indiquée, nous avons cherché à modéliser l'atmosphère ainsi que l'effet de serre. Nous cherchions à obtenir une relation de récurrence entre la puissance surfacique lors de la n-ème réfraction, et celle lors de la n+1-ème réfraction.
+
+Pour commencer, nous avons considéré un rayon incident, atteignant la surface terrestre, de puissance surfacique égale à 240 $W \cdot m^{-2}$. Ce rayon $u_0$ est supposé entièrement ré-émis par la Terre. Nous avons calculé que 23\% du rayonnement initial ré-émis traversera l'atmosphère sans être arrêté par les gaz à effet de serre (ceci étant dû aux différentes longueurs d'onde : certaines sont moins arrêtées que d'autres par ces gaz).
+ 
+Ensuite, sur la proportion restante (77\% du rayonnement initial), seulement la moitié est renvoyée vers la Terre (50\% de cette énergie est absorbée au niveau des gaz à effet de serre et renvoyée par la Terre).
+ 
+Le même phénomène se reproduit, jusqu'à ce que le rayonnement soit négligeable. Nous pouvons établir la relation de récurrence suivante (un étant la puissance surfacique reçue par la Terre au moment de la n-ième ré-émission vers la Terre) : 
+
+\[ u_{n+1} = 0.5 \cdot 0.77 \cdot u_n ~ , ~ \forall n \geq 1 \]
+
+D'où :
+
+\[ u_n = u_1 * (0.5*0.77)^{n-1} \]
+
+Nous nous intéressons à $ \displaystyle\sum_{k=1}^{n} u_k$. Cette somme tend vers $\dfrac{u_1}{1-0.5 \cdot 0.77} = 244 ~ W \cdot m^{-2}$. En ajoutant les $240 ~W \cdot m^{-2}$ arrivant, on obtient une puissance surfacique totale de $484 ~W \cdot m^{-2}$. 
+
+\newpage
+
+On peut expliquer les calculs grâce au schéma suivant : \\
+
+\begin{adjustbox}{center}
+\includegraphics[scale=1]{Effet_de_serre}
+\end{adjustbox}
+\begin{figure}[h]
+  \centering
+  \caption{Modélisation de l'effet de serre}
+\end{figure}
+
+ 
 
 
 
