@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.13)  20 JUN 2024 14:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.13)  20 JUN 2024 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -804,16 +804,26 @@ File: Schema_albedo.png Graphic file (type png)
 <use Schema_albedo.png>
 Package pdftex.def Info: Schema_albedo.png  used on input line 141.
 (pdftex.def)             Requested size: 462.52687pt x 222.2297pt.
- [4 <./Schema_albedo.png>] (Modele_3.aux)
+ [4 <./Schema_albedo.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
+ []
+
+<Effet_de_serre.png, id=58, 307.74976pt x 303.534pt>
+File: Effet_de_serre.png Graphic file (type png)
+<use Effet_de_serre.png>
+Package pdftex.def Info: Effet_de_serre.png  used on input line 169.
+(pdftex.def)             Requested size: 307.749pt x 303.53325pt.
+[5 <./Effet_de_serre.png>] (Modele_3.aux)
 Package rerunfilecheck Info: File `Modele_3.out' has not changed.
 (rerunfilecheck)             Checksum: 900CE531347A62B96B0A9A8DA1726241;267.
  ) 
 Here is how much of TeX's memory you used:
- 17942 strings out of 475385
- 297462 string characters out of 2776907
+ 17960 strings out of 475385
+ 297779 string characters out of 2776907
  679098 words of memory out of 3000000
- 38908 multiletter control sequences out of 15000+600000
- 525647 words of font info for 127 fonts, out of 8000000 for 9000
+ 38918 multiletter control sequences out of 15000+600000
+ 525896 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,90p,1007b,461s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C
@@ -833,9 +843,9 @@ nton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/An
 ton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Anto
 n/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Anto
 n/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Modele_3.pdf (4 pages, 869840 bytes).
+Output written on Modele_3.pdf (5 pages, 919549 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
- 30765 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 126 PDF objects out of 1000 (max. 8388607)
+ 14 named destinations out of 1000 (max. 500000)
+ 30770 words of extra memory for PDF output out of 35830 (max. 10000000)
 
