@@ -42,6 +42,6 @@ en Python pour [Modele_2.py](https://github.com/quokkafeal6/IPCC/blob/main/Code/
 
 ## Documentation
 
-[Voir le fichier Explication_valeur_moyenne_albedo.pdf(https://github.com/quokkafeal6/IPCC/blob/main/Donnees_sources_explications/Explication_valeur_moyenne_albedo.pdf) dans le dossier Donnees_sources_explications commun aux 4 modèles]
+[Voir le fichier Explication_valeur_moyenne_albedo.pdf(https://github.com/quokkafeal6/IPCC/blob/main/Donnees_sources_explications/Explication_valeur_moyenne_albedo.pdf) dans le dossier Donnees_sources_explications commun aux 3 modèles]
 
 
