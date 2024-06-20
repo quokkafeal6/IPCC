@@ -1,3 +1,5 @@
+#MODULE A INSTALLER !!! : pip install basemap
+
 import math
 import numpy as np
 import matplotlib.pyplot as plt
