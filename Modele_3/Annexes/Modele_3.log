@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.13)  14 JUN 2024 17:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.13)  20 JUN 2024 14:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -759,80 +759,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 [1
 
 {C:/Users/Anton/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<Schema_maitre_couple.png, id=35, 454.644pt x 175.857pt>
+<Schema_maitre_couple.png, id=31, 454.644pt x 175.857pt>
 File: Schema_maitre_couple.png Graphic file (type png)
 <use Schema_maitre_couple.png>
 Package pdftex.def Info: Schema_maitre_couple.png  used on input line 73.
 (pdftex.def)             Requested size: 409.17581pt x 158.26984pt.
-
-
-Package caption Warning: \setcaptiontype
-(caption)                outside box or environment on input line 75.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 75.
-See the caption package documentation for explanation.
-
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 
-LaTeX Warning: Command \c invalid in math mode on input line 86.
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+<Rayons_terre.png, id=33, 832.61063pt x 569.87906pt>
+File: Rayons_terre.png Graphic file (type png)
+<use Rayons_terre.png>
+Package pdftex.def Info: Rayons_terre.png  used on input line 85.
+(pdftex.def)             Requested size: 266.44084pt x 182.36502pt.
+[2 <./Schema_maitre_couple.png> <./Rayons_terre.png>]
+
+LaTeX Warning: Command \c invalid in math mode on input line 95.
 
 
-LaTeX Warning: Command \c invalid in math mode on input line 90.
+LaTeX Warning: Command \c invalid in math mode on input line 99.
 
-<projete_omega_t.png, id=37, 253.54726pt x 245.718pt>
+<projete_omega_t.png, id=44, 253.54726pt x 245.718pt>
 File: projete_omega_t.png Graphic file (type png)
 <use projete_omega_t.png>
-Package pdftex.def Info: projete_omega_t.png  used on input line 95.
+Package pdftex.def Info: projete_omega_t.png  used on input line 104.
 (pdftex.def)             Requested size: 126.7733pt x 122.85869pt.
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 97.
-See the caption package documentation for explanation.
-
-[2 <./Schema_maitre_couple.png>]
-
-LaTeX Warning: Command \c invalid in math mode on input line 109.
+LaTeX Warning: Command \c invalid in math mode on input line 121.
 
 
-LaTeX Warning: Command \c invalid in math mode on input line 113.
+LaTeX Warning: Command \c invalid in math mode on input line 125.
 
 
-LaTeX Warning: Command \c invalid in math mode on input line 122.
+LaTeX Warning: Command \c invalid in math mode on input line 134.
 
-<Schema_albedo.png, id=47, 925.056pt x 444.4605pt>
+[3 <./projete_omega_t.png>]
+<Schema_albedo.png, id=51, 925.056pt x 444.4605pt>
 File: Schema_albedo.png Graphic file (type png)
 <use Schema_albedo.png>
-Package pdftex.def Info: Schema_albedo.png  used on input line 129.
+Package pdftex.def Info: Schema_albedo.png  used on input line 141.
 (pdftex.def)             Requested size: 462.52687pt x 222.2297pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 131.
-See the caption package documentation for explanation.
-
-[3 <./projete_omega_t.png>] [4 <./Schema_albedo.png>] [5] (Modele_3.aux)
+ [4 <./Schema_albedo.png>] (Modele_3.aux)
 Package rerunfilecheck Info: File `Modele_3.out' has not changed.
-(rerunfilecheck)             Checksum: 444036EDF32BC9D48EB9583D41E6E577;345.
+(rerunfilecheck)             Checksum: 900CE531347A62B96B0A9A8DA1726241;267.
  ) 
 Here is how much of TeX's memory you used:
- 17947 strings out of 475385
- 297395 string characters out of 2776907
+ 17942 strings out of 475385
+ 297462 string characters out of 2776907
  679098 words of memory out of 3000000
- 38903 multiletter control sequences out of 15000+600000
- 528996 words of font info for 132 fonts, out of 8000000 for 9000
+ 38908 multiletter control sequences out of 15000+600000
+ 525647 words of font info for 127 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,15n,90p,1007b,600s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 84i,15n,90p,1007b,461s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C
 :/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C
 :/Users/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Us
 ers/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Us
 ers/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Us
 ers/Anton/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users
-/Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users
 /Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users
 /Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/User
 s/Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/User
@@ -844,9 +833,9 @@ nton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/An
 ton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Anto
 n/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Anto
 n/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Modele_3.pdf (5 pages, 742636 bytes).
+Output written on Modele_3.pdf (4 pages, 869840 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
- 32816 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 118 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
+ 30765 words of extra memory for PDF output out of 35830 (max. 10000000)
 

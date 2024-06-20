@@ -71,14 +71,22 @@ Dans ce modèle, la température est constante et  :
 \begin{adjustbox}{center}
 \includegraphics[scale=0.9]{Schema_maitre_couple}
 \end{adjustbox}
-\captionof{table}{Surface considérée (maître-couple) \\} 
+\begin{figure}[h]
+  \centering
+  \caption{Surface considérée (maître-couple)}
+\end{figure}
 
 \section{Modèle 2}
 
 On considère que la Terre suit une trajectoire circulaire. Le rayonnement du soleil arrivant sur la terre est supposé orthogonal (Terre à une distance infinie du Soleil). On ne prend pas encore en compte l’atmosphère. L’albédo est considéré comme une constante A. On prend en compte la latitude et la longitude ainsi que la rotation de la Terre en se basant sur le méridien de Greenwich (heure 0). On néglige l'inclinaison de la Terre.
 
-\textbf{Image à inclure ici ! ! !
-}
+\begin{adjustbox}{center}
+\includegraphics[scale=0.32]{Rayons_terre}
+\end{adjustbox}
+\begin{figure}[h]
+  \centering
+  \caption{Schéma de la situation}
+\end{figure}
 
 Dans ce modèle, la puissance reçue par un élément de surface de la Terre est $P_S \cdot \overrightarrow{dS'}$. De plus, on a $\overrightarrow{dS} = dS \cdot \vec{n}$ et $\overrightarrow{dS'} = dS' \cdot \vec{n'}$. Ainsi, la puissance surfacique reçue par un élément de surface de la Terre est :
 
@@ -93,7 +101,11 @@ On projette ensuite $\vec{n}$ et $\vec{n'}$ dans le repère cartésien (x(t), y(
 \begin{adjustbox}{center}
 \includegraphics[scale=0.5]{projete_omega_t}
 \end{adjustbox}
-\captionof{table}{Rotation de la Terre (vue de dessus) \\} 
+\begin{figure}[h]
+  \centering
+  \caption{Rotation de la Terre (vue de dessus)}
+\end{figure}
+ 
 Puisque $ \vec{n} = -\overrightarrow{e_r}$, on a :
 
 \[ \vec{n} = - \sin \theta \cos \phi ~ \vec{x} - \sin \theta \sin \phi ~ \vec{y} \]
@@ -119,9 +131,6 @@ On peut ensuite calculer la température en un point de la Terre, en fonction de
 
 \[ T (\theta , \phi , t) = \left(\dfrac{(1 - A) \cdot P_{S,reçue}}{4\sigma}\right)^{1/4} \]
 
-
-\newpage
-\section{Annexes}
 
 
 
