@@ -50,6 +50,3 @@ en Python pour [Modele_3.py](https://github.com/quokkafeal6/IPCC/blob/main/Code/
 [Voir le fichier Explication_valeur_moyenne_albedo.pdf(https://github.com/quokkafeal6/IPCC/blob/main/Donnees_sources_explications/Explication_valeur_moyenne_albedo.pdf) dans le dossier Donnees_sources_explications commun aux 4 modèles]
 
 
-## Licence
-
-Voir le fichier [LICENSE](./LICENSE.md) du dépôt.
