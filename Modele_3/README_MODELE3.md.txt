@@ -12,7 +12,7 @@
 - 🛠️ [Utilisation](#utilisation)
 - 🏗️ [Construit avec](#construit-avec)
 - 📚 [Documentation](#documentation)
-- 📝 [Licence](#licence)
+
 
 ## Prérequis
 
