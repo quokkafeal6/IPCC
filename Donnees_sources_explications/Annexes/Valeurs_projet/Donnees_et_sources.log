@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.13)  20 JUN 2024 16:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.13)  20 JUN 2024 17:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -564,8 +564,12 @@ tex.def
 File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count307
 \l__pdf_internal_box=\box58
-)
-No file Donnees_et_sources.aux.
+) (Donnees_et_sources.aux
+(C:\Users\Anton\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/fr\babel
+-french.tex
+Package babel Info: Importing font and identification data for french
+(babel)             from babel-fr.ini. Reported on input line 11.
+))
 \openout1 = `Donnees_et_sources.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -586,12 +590,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
-
-(C:\Users\Anton\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/fr\babel
--french.tex
-Package babel Info: Importing font and identification data for french
-(babel)             from babel-fr.ini. Reported on input line 11.
-)
 LaTeX Info: Redefining \degres on input line 25.
 LaTeX Info: Redefining \up on input line 25.
 LaTeX Info: Redefining \microtypecontext on input line 25.
@@ -678,11 +676,13 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 25.
+(Donnees_et_sources.out) (Donnees_et_sources.out)
 \@outlinefile=\write3
 \openout3 = `Donnees_et_sources.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
 7.
+
 (C:\Users\Anton\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -782,20 +782,14 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 {C:/Users/Anton/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./densite_pu
 issance.png>] [2] (Donnees_et_sources.aux)
-
-Package rerunfilecheck Warning: File `Donnees_et_sources.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Donnees_et_sources.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `Donnees_et_sources.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17873 strings out of 475385
- 296091 string characters out of 2776907
- 677059 words of memory out of 3000000
- 38877 multiletter control sequences out of 15000+600000
+ 17883 strings out of 475385
+ 296540 string characters out of 2776907
+ 677099 words of memory out of 3000000
+ 38881 multiletter control sequences out of 15000+600000
  518600 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,7n,90p,1017b,458s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -813,9 +807,9 @@ s/Anton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users
 nton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/A
 nton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/An
 ton/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Donnees_et_sources.pdf (2 pages, 224220 bytes).
+Output written on Donnees_et_sources.pdf (2 pages, 226168 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
+ 83 PDF objects out of 1000 (max. 8388607)
  4 named destinations out of 1000 (max. 500000)
  25094 words of extra memory for PDF output out of 29859 (max. 10000000)
 
