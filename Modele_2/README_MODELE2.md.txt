@@ -1,8 +1,8 @@
-# [Readme Modèle1]
+# [Readme Modèle2]
 
 ## À propos
 
-[On a réalisé le premier modèle lors de la première séance du projet : le vendredi 31 Mai 2024]
+[On a réalisé le deuxième modèle lors de la deuxième séance et troisième séance du projet : le jeudi 6 juin 2024 et vendredi 7 juin 2024]
 
 ## Table des matières
 
@@ -15,9 +15,9 @@
 
 ## Prérequis
 
-[deux fichiers dans le modèle 1 :
-- [Modele_1.pdf](https://github.com/quokkafeal6/IPCC/blob/main/Modele_1/Modele_1.pdf) c'est le fichier PDF pour expliquer notre premier modèle avec des schémas
-- [Modele_1.py](https://github.com/quokkafeal6/IPCC/blob/main/Code/Modele_1.py) c'est le fichier python qui modélise le modèle numériquement]
+[deux fichiers dans le modèle 2 :
+- [Modele_2.pdf](https://github.com/quokkafeal6/IPCC/blob/main/Modele_2/Modele_2.pdf) c'est le fichier PDF pour expliquer notre premier modèle avec des schémas
+- [Modele_2.py](https://github.com/quokkafeal6/IPCC/blob/main/Code/Modele_2.py) c'est le fichier python qui modélise le modèle numériquement]
 
 
 
@@ -31,8 +31,8 @@
 ### Langages & Frameworks
 
 [Langage utilisé : 
-en Latex pour [Modele_1.pdf](https://github.com/quokkafeal6/IPCC/blob/main/Modele_1/Modele_1.pdf)
-en Python pour [Modele_1.py](https://github.com/quokkafeal6/IPCC/blob/main/Code/Modele_1.py)
+en Latex pour [Modele_2.pdf](https://github.com/quokkafeal6/IPCC/blob/main/Modele_2/Modele_2.pdf)
+en Python pour [Modele_2.py](https://github.com/quokkafeal6/IPCC/blob/main/Code/Modele_2.py)
 ]
 
 ### Outils 
