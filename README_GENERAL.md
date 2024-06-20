@@ -2,7 +2,7 @@
 
 ## À propos
 
-[Voici le readme général du projet IPCC du groupe kokka féal année 2024]
+[Voici le readme général du projet IPCC du groupe quokka féal année 2024]
 
 ## Table des matières
 
@@ -22,7 +22,7 @@
 - [Modele_3] (https://github.com/quokkafeal6/IPCC/tree/main/Modele_3) le dossier correspondant au troisième modèle
 - [Pistes_futures](https://github.com/quokkafeal6/IPCC/tree/main/Pistes_futures) le dossier correspondant aux modèles futures et pistes d'amélioration possible
 📝[Le fichier PDF] :
-- [Compte-rendu par seance .pdf](https://github.com/quokkafeal6/IPCC/blob/main/Compte-rendu%20par%20seance%20.pdf) voici le compte-rendu total du projet IPCC
+- [Compte-rendu par seance.pdf](https://github.com/quokkafeal6/IPCC/blob/main/Compte-rendu%20par%20seance%20.pdf) voici le compte-rendu total du projet IPCC
 
 
 ## Utilisation
